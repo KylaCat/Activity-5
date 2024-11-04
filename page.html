@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>ALL ABOUT JAVASCRIPT</h1>
+    <h1 id="result"></h1>
+
+    <script src="js/custom.js"></script>
+
+
+    <script type="text/javascript">
+        var name = "KYLA ZULUETA";
+        function retrieveName(){
+            var name = "local Variable";
+            return name;
+        }
+        console.log(name);
+        document.write(retrieveName());
+
+        //FUNCTION WITH PARAMETER
+        function determineAge(){
+            var age =20;
+
+            if(age >=18){
+                var status = "ADULT";
+            }else{
+                var status ="MINOR";
+            }
+            return status;
+        }
+        document.write("<br><br>");
+        document.write(determineAge());
+
+        //FUNCTION WITH PARAMETER
+        function inputAge(){
+            var age = prompt("Enter your age: ");
+            var status = (age >=18)?"ADULT" : "MINOR";
+            document.write("<br><br>");
+            document.write(status);
+        }
+        inputAge();
+
+      
+       //document.write("YOUR GRADE IS:" + inputTwoNumbers());
+       //console.log()
+
+       function checkRemarks(grade){
+        var remarks = (grade > 3.0)? "FAILED" : "PASSED";
+        return remarks;
+       }
+       document.write("<br><br>");
+       calculateGrade();
+        
+
+
+
+
+    </script>
+</body>
+</html>
